@@ -38,7 +38,10 @@ namespace BakeryApp.Models
       return _instances[findId-1];
     }
 
-
+    public void AddOrder(Order order)
+    {
+      Order.Add(order);
+    }
 
   }
 
