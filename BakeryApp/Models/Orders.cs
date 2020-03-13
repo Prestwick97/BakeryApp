@@ -36,7 +36,10 @@ namespace BakeryApp.Models
       _instances.Clear();
     }
 
-
+    public static Order Find(int findId)
+    {
+      return _instances[findId-1];
+    }
 
   }
 }
