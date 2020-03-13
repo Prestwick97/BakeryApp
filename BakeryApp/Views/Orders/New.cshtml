@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New Order</title>
+</head>
+<body>
+
+<h1>Add a new order to @Model.Name</h1>
+
+<form action="/vendors/@Model.Id/orders" method="post">
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="orderTitle">Order Description</label>
+  <input id="orderTitle" name="orderTitle" type="text">
+
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="orderDescription">Order Description</label>
+  <input id="orderDescription" name="orderDescription" type="text">
+
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="orderPrice"></label>
+  <input id="orderPrice" name="orderPrice" type="text">
+
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="orderDate"></label>
+  <input id="orderDate" name="orderDate" type="text">
+
+
+  <button type='submit'>Add order</button>
+</form>
+
+</body>
+</html>
+
+<input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for=""></label>
+  <input id="" name="" type="text">

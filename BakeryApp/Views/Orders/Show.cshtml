@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order details</title>
+</head>
+<body>
+
+<h1>Vendor's order details: </h1>
+
+<h2>@Model["order"].Description</h2>
+<h3>Category: @Model["vendor"].Name</h3>
+
+<a href='/vendors/@Model["vendor"].Id/order/new'>Add another order</a>
+<a href='/vendors'>View all vendors</a>
+
+</body>
+</html>
