@@ -21,10 +21,10 @@ namespace BakeryApp.Models
 
     public static List<Vendor> GetAll()
     {
-      if (_instances.Count == 0)
-      {
-        Console.WriteLine("No current vendors");
-      }
+      // if (_instances.Count == 0)
+      // {
+      //   return "<p> No current vendors </p>";
+      // }
       return _instances;
     }
 
@@ -40,7 +40,7 @@ namespace BakeryApp.Models
 
     public void AddOrder(Order order)
     {
-      Order.Add(order);
+      Orders.Add(order);
     }
 
   }
