@@ -31,6 +31,12 @@ namespace BakeryApp.Models
       return _instances;
     }
 
+    public static void CLearAll()
+    {
+      _instances.Clear();
+    }
+
+
 
   }
 }
