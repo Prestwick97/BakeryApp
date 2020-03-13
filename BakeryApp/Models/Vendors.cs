@@ -18,6 +18,28 @@ namespace BakeryApp.Models
       Id = _instances.Count;
       Orders = new List<Order>{};
     }
+
+    public static List<Vendor> GetAll()
+    {
+      if (_instances.Count == 0)
+      {
+        Console.WriteLine("No current vendors");
+      }
+      return _instances;
+    }
+
+    public static void CLearAll()
+    {
+      _instances.Clear();
+    }
+
+    public static Vendor Find(int findId)
+    {
+      return _instances[findId-1];
+    }
+
+
+
   }
 
 }
