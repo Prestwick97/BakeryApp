@@ -21,5 +21,16 @@ namespace BakeryApp.Models
       _instances.Add(this);
       Id = _instances.Count;
     }
+
+    public static List<Order> GetAll()
+    {
+      if (_instances.Count == 0)
+      {
+        Console.WriteLine("No orders for vendor");
+      }
+      return _instances;
+    }
+
+
   }
 }

@@ -11,9 +11,9 @@ namespace BakeryApp
     public Startup(IHostingEnvironment env)
     {
       var builder = new ConfigurationBuilder()
-          .SetBasePath(env.ContentRootPath)
-          .AddEnvironmentVariables();
-      Configuration = builder.Build();
+        .SetBasePath(env.ContentRootPath)
+        .AddEnvironmentVariables();
+        Configuration = builder.Build();
     }
 
     public IConfigurationRoot Configuration { get; }
