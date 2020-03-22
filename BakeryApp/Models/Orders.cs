@@ -12,10 +12,10 @@ namespace BakeryApp.Models
     public int Id {get;}
     private static List<Order> _instances = new List<Order> {};
 
-    public Order(string title, string decription, int price, string date)
+    public Order(string title, string description, int price, string date)
     {
       Title = title;
-      Description = Description;
+      Description = description;
       Price = price;
       Date = date;
       _instances.Add(this);
